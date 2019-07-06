@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="breadcrumbs">
+            <div class="content-wrapper">
+                <ul class="items">
+                    <li><a href="../index.html">主页<span>/</span></a></li>
+                    <li><a href="javascript:;">腕表<span>/</span></a></li>
+                    <li><a href="javascript:;">优雅<span>/</span></a></li>
+                    <li><a href="list.html">浪琴表心月系列<span>/</span></a></li>
+                    <li><a href="javascript:;">商品详情</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="container">
+                <!-- 商品的图片 -->
+                <div class="shop-img" id="shop-imgs">
+        
+                </div>
+                <!-- 商品的具体详情 -->
+                <div class="shop-description">
+
+                </div>
+            </div>
+
+                <!-- 图片的template -->
+        <script type="text/html" id="template-img">
+            <div class="view_bd medium-container">
+                <img class="medium-pic" src="{{data.images[0]}}" data-zoom-image="{{data.images[0]}}" alt="服务器无响应" />
+            </div>
+            <div class="view_thumbs" id="gal1">
+                <ul class="view-ul ">
+                    {{each data.images img}}
+                    <li class="small-container">
+                        <a href="javascript:;" data-image="{{img}}" data-zoom-image="{{img}}">
+                            <img class="img-responsive small" src="{{img}}" alt="服务器无响应" />
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+                <!-- 商品详情的template -->
+        <script type="text/html" id="template-desc">
+                <div class="first-desc">
+                        <h4 class="title">{{data.title}}</h4>
+                        <div class="size-sort">
+                            <p><span>{{data.size}}</span>mm</p>
+                            <h3>{{data.type}}</h3>
+                        </div>
+                    </div>
+                    <ul class="product-info-list">
+                        <li>表款编码L2.629.4.78.6</li>
+                        <li>表壳材质：精钢</li>
+                        <li>表带材质：精钢</li>
+                        <li>表盘指针：蓝钢指针</li>
+                        <li>表盘刻度:漆绘阿拉伯数字</li>
+                        <li>表盘颜色:银色"麦粒"饰纹</li>
+                        <li>机芯类型:自动上链机械机芯，每小时振动28,800次，提供42小时动力储存。</li>
+                    </ul>
+                    <div class="price">
+                        <p>￥<span>{{data.price}}</span></p>
+                        <a href="javascript:;" class="by-stages">查看花呗分期详情</a>
+                    </div>
+                    <div class="finally-decs">
+                        <div class="watch-strap-size">
+                            <p class="p1">标准表带尺寸<span>{{data.watchss}}</span></p>
+                            <p class="p2">如何测量您的表带尺寸</span></p>
+                        </div>
+                        <div class="shop-cart">
+                            <div class="cart addCart">加入购物车</div>
+                            <div class="buy-immediately">现在购买</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </script>
+        <div class="part1">
+            <a href="javascript:;"><img src="/img/L26294786-pc_01.jpg" alt=""></a>
+        </div>            
+    </main>
+    <footer></footer>
+    <script src="../libs/requirejs/require.min.js" data-main="../js/detail"></script>
+</body>
+
+</html>

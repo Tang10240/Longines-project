@@ -1,0 +1,280 @@
+header{
+    width:100%;
+    height: 110px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    background-color: #fff;
+    .top-links{
+        width:100%;
+        height: 50px;
+        background-color:#abb0b3;
+        font-size:12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menubar{
+            flex:1;
+            height:100%;
+            .f-left{
+                float: left;
+                width:116px;
+                height: 100%;
+                line-height: 50px;
+                padding-left:20px;
+                background: url(../../img/nav-1.jpg) no-repeat 101px center;
+                a{
+                    display: block;
+                    width:100%;
+                    height:100%;
+                    color:white;
+                }
+                &:hover{
+                    a{
+                        color:#003150;
+                    }
+                }
+            }
+            .greet-welcome{
+                float: right;
+                width:86px;
+                height: 100%;
+                line-height: 50px;
+                padding-left:45px;
+                background: url(../../img/nav-4.jpg) no-repeat 15px center;
+                a{
+                    color:white;
+                }
+                &:hover{
+                    a{
+                        color:#003150;
+                    }
+                }
+            }
+            .m-right{
+                float: right;
+                width:112px;
+                height:100%;
+                line-height: 50px;
+                padding-left:45px;
+                background: url(../../img/nav-3.jpg) no-repeat 15px center;
+                a{
+                    color:white;
+                }
+                &:hover{
+                    a{
+                        color:#003150;
+                    }
+                }
+            }
+
+        }
+        .shopping-bag{
+            width:124px;
+            height: 100%;
+            line-height: 50px;
+            padding-left:45px;
+            background: #90959b url(../../img/nav-5.jpg) no-repeat 15px center;
+            a{
+                color:white;
+            }
+            &:hover{
+                a{
+                    color:#003150;
+                }
+            }
+        }
+    }
+    .main-menu{
+        width:100%;
+        height: 60px;
+        font-weight: 900;
+        font-size: 14px;
+        position: relative;
+        .nav-left{
+            width:50%;
+            height: 100%;
+            line-height: 60px;
+            padding-right: 90px;
+            float: left;
+            // position: relative;
+            li{
+                float: right;
+                a{
+                    display: block;
+                    width:102px;
+                    height: 60px;
+                    padding: 0 15px;
+                    color:#003150;
+                    text-align: center;
+                }
+                
+            }
+        }
+        .nav-right{
+            width:50%;
+            height: 100%;
+            line-height: 60px;
+            padding-left: 90px;
+            float: right;
+            li{
+                float: left;
+                a{
+                    display: block;
+                    width:74px;
+                    height: 60px;
+                    padding: 0 15px;
+                    color:#003150;
+                    text-align: center;
+                }
+            }
+
+        }
+        .logo{
+           position: absolute;
+           top:10px;
+           left:44%;
+           img{
+               width:162px;
+               height: 40px;
+           }
+        }
+        form{
+            width:200px;
+            height: 30px;
+            border: 1px solid #003150;
+            background: url(../../img/search.jpg) no-repeat 170px center;
+            position: absolute;
+            top:15px;
+            right:0;
+            .search{
+                width:170px;
+                height: 100%;
+                line-height: 30px;
+                font-size:12px;
+                padding-left:5px;
+            }
+        }
+
+    }
+    // 导航隐藏部分
+    .nav-list{
+        width:100%;
+        min-height:1px;
+        border-top: 1px solid #abb0b3;
+        background-color: #fff;
+        display: none;
+        // overflow: auto;
+        position: absolute;
+        top:110px;
+        left:0;
+        .nav-list-wrap{
+            width:92%;
+            min-height:1px;
+            margin: 0 auto;
+            padding-top: 50px;
+            .classification{
+                min-width:1213px; 
+                min-height:32px;
+                //padding-top: 50px;
+                a{
+                   float: left;
+                    line-height: 32px;
+                    padding:0 15px;
+                    color: #003150;
+                    font-weight: 600;
+                    font-size:14px;
+                }
+            }
+            .detailed{
+                min-width:1205px;
+                height:499px;
+                .li-1{
+                    width:241px;
+                    height:100%;
+                    padding: 40px 4px 0 4px;
+                    float: left;
+                    .pic{
+                        display: block;
+                        width:203px;
+                        height:210px;
+                        margin: 0 15px 20px 15px;
+                        img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                    span{
+                        display: block;
+                        width:203px;
+                        height:20px;
+                        font-size:14px;
+                        color: #003150;
+                        font-weight: 600;
+                        margin: 0 15px 20px 15px;
+                    }
+                    .sma-detailed{
+                        width:203px;
+                        height:189px;
+                        margin: 0 15px;
+                        li{
+                            width:203px;
+                            height:27px;
+                            font-size:13px;
+                            a{
+                                display: block;
+                                padding: 4px 0 5px;
+                                color: #737373;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .longines-world{
+        //     width:1203px;
+        //     min-height:1px;
+        //     //padding-top: 50px;
+        //     .detailed-2{
+        //         width:100%;
+        //         height:584px;
+        //         .li-2{
+        //             width: 301px;
+        //             height: 584px;
+        //             padding: 0 4px;
+        //             float: left;
+        //             .pic1{
+        //                 display: block;
+        //                 width: 293px;
+        //                 height: 210px;
+        //                 background: url(../../img/ambassadors_1.jpg) no-repeat 100% 100%;
+        //             }
+        //             .span-1{
+        //                 display: block;
+        //                 width: 293px;
+        //                 height: 34px;
+        //                 padding: 7px 0;
+        //                 text-transform: uppercase;
+        //                 color: #003150;
+        //                 font-size: 14px;
+        //                 font-weight: 600;
+        //             }
+        //             .sma-detailed2{
+        //                 width: 293px;
+        //                 height: 340px;
+        //                 li{
+        //                     width:293px;
+        //                     height:24px;
+        //                     font-size:13px;
+        //                     a{
+        //                         display: block;
+        //                         padding: 3px 0;
+        //                         color: #737373;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

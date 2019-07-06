@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="list-top">
+            <ul class="items">
+                <li><a href="../index.html">主页<span>/</span></a></li>
+                <li><a href="javascript:;">腕表<span>/</span></a></li>
+                <li><a href="javascript:;">优雅<span>/</span></a></li>
+                <li><a href="javascript:;">浪琴表新月系列</a></li>
+            </ul>
+            <div class="list-sort">
+                <p>排序</p>
+                <select id="">
+                    <option value="热销商品" selected>热销商品</option>
+                    <option value="默认">默认</option>
+                    <option value="价格 升序">价格 升序</option>
+                    <option value="价格 降序">价格 降序</option>
+                </select>
+            </div>
+        </div>
+        <div class="shop-list">
+            <ul class="shop-l" id="shop-l">
+            
+                
+            </ul>
+            <!-- template模板 -->
+            <script type="text/html" id="list-template">
+                {{each list item}}
+                    <li>
+                        <a href="/html/detail.html?id={{item.id}}" class="li-a">
+                            <img src="{{item.img}}" alt="">
+                            <p class="title">{{item.title}}</p>
+                            <span class="descript">{{item.descript}}</span>
+                            <div class="price">￥{{item.price}}</div>
+                            <div class="purchase">立即选购</div>
+                        </a>
+                    </li>
+                {{/each}}
+            </script>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/list"></script>
+</body>
+
+</html>

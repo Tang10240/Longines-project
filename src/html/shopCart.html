@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shopCart.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="mintop">
+            <ul>
+                <li><a href="../index.html">主页<span>/</span></a></li>
+                <li>购物袋</li>
+            </ul>
+        </div>
+        <div class="conner-wrap">
+            <table class="shop-cart">
+                <caption>购物车</caption>
+                <thead>
+                    <tr class="t-head">
+                        <th><input type="checkbox" class="allCheck">全选</th>
+                        <th>商品</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-tbody">
+                    <!-- <tr class="empty-cart" id="empty-cart">
+                        <td colspan="6"><a href="list.html">购物车为空，去逛逛添加吧！</a></td>
+                    </tr> -->
+                    
+                </tbody>
+                <tfoot>
+                    <tr class="t-foot">
+                        <td class="total" colspan="5">合计：￥<span class="totalPrice">0.00</span></td>
+                        <td class="settlement"><a href="javascript:;">立即结算</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <script type="text/html" id="cart-template">
+                {{each cart data}}
+                <tr class="t-body" data-id="{{data.id}}">
+                        <td><input type="checkbox" class="check" {{data.check ? 'checked' : ''}}></td>
+                        <td class="shop">
+                            <a href="detail.html?id={{data.id}}">
+                                <img src="{{data.images[0]}}" alt="加载失败">
+                                <p class="shop-desc">{{data.title}}</p>
+                            </a>
+                        </td>
+                        <td class="price"><p>￥<span>{{data.price}}</span></p></td>
+                        <td class="number">
+                            <div>
+                                <a href="javascript:;" class="subNum">-</a>
+                                <span class="n-num">{{data.num}}</span>
+                                <a href="javascript:;" class="add">+</a>
+                            </div>
+                        </td>
+                        <td class="subtotal"><p>￥<span>{{(data.price * data.num).toFixed(2)}}</span></p></td>
+                        <td class="operation"><a href="javascript:;" class="delete">删除</a></td>
+                </tr>
+                {{/each}}
+            </script>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../libs/requirejs/require.min.js" data-main="../js/shopCart"></script>
+</body>
+</html>

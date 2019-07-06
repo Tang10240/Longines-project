@@ -1,0 +1,123 @@
+@import "./modules/base.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+main{
+    width:100%;
+    min-height:2200px;
+    margin-top:110px;
+    .list-top{
+        min-width:1140px;
+        height:57px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .items{
+            width:50%;
+            height: 100%;
+            float: left;
+            padding-left:100px;
+            li{
+                float: left;
+                font-size:14px;
+                a{
+                    color: #003150;
+                    span{
+                        color: #003150;
+                        margin: 0 3px;
+                    }
+                }
+            }
+        }
+        .list-sort{
+            width:50%;
+            height: 100%;
+            float: right;
+            font-size: 14px;
+            font-weight: 400;
+            padding-left:220px;
+            p{
+                line-height: 57px;
+                padding: 0 15px 2px 0;
+                color: #003150;
+                float:left;
+                margin-right: 10px;
+            }
+            select{
+                float:left;
+                width:180px;
+                height: 100%;
+                padding:0 20px;
+                color: white;
+                background-color: #003150;
+            }
+        }
+    }
+    // 商品列表的样式
+    .shop-list{
+        width:1140px;
+        min-width: 1140px;
+        min-height: 1px;
+        margin: 0 auto;
+        .shop-l{
+            width:100%;
+            min-height:1px;
+            li{
+                    float: left;
+                    width:380px;
+                    height:500px;
+                    padding:10px;
+                    &:hover{
+                        border:1px solid #84888b;
+                        background-color: #fff;
+                    }
+                    .li-a{
+                       display: block;
+                        img{
+                            width:360px;
+                            height:360px;
+                        }
+                        .title{
+                            width: 360px;
+                            height: 20px;
+                            line-height: 20px;
+                            font-weight: 600px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #84888b;
+                            margin-bottom: 7px;
+                        }
+                        .descript{
+                            display: block;
+                            width: 360px;
+                            height: 20px;
+                            line-height: 20px;
+                            font-weight: 600px;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #84888b;
+                            margin-bottom: 7px;
+                        }
+                        .price{
+                            height:25px;
+                            font-size: 18px;
+                            margin-top: 10px;
+                            text-align: center;
+                            margin-bottom: 5px;
+                            color: #003150;
+                        }
+                        .purchase{
+                            background: #002744;
+                            color: #fff;
+                            font-size: 10px;
+                            width: 90px;
+                            height: 25px;
+                            line-height: 25px;
+                            font-weight: 400;
+                            text-align: center;
+                            margin-left: 130px;
+                        }
+                    }
+            }
+        }
+    }
+}
