@@ -10,18 +10,15 @@ require(['./config'], () => {
           this.shopInfo(detail)
           this.addToCar()
           console.log(detail)
-
         })
       }
       getData(){
         //取到id，请求接口
         const id = window.location.search.slice(4)
-        console.log(id)
         return new Promise(resolve =>{
           $.get(`${url.rapBaseUrl}/shop/detail`,{ id },resp =>{
             //由于rap2不能处理请求的时候携带的id，所以返回的数据里面没有id
             //所以要手动的给detail加上id字段
-            console.log(resp)
             //console.log(resp)
             if(resp.code === 200) {
               let { detail } = resp.body

@@ -7,7 +7,9 @@ require.config({
       template:'libs/art-template/template-web',
       url:'js/modules/url',
       zoom: 'libs/jquery-plugins/jquery.elevateZoom-3.0.8.min',
-      fly: 'libs/jquery-plugins/jquery.fly.min'
+      fly: 'libs/jquery-plugins/jquery.fly.min',
+      superslide:'libs/jquery/superslide.2.1',
+      banner:'js/modules/banner'
     },
     //垫片
     //不满足AMD规范，但又依赖别的模块
@@ -16,6 +18,9 @@ require.config({
         deps:['jquery']
       },
       fly: {
+        deps: ['jquery']
+      },
+      superslide: {
         deps: ['jquery']
       }
     }
