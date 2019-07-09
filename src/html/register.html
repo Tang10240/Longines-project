@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
+    <link rel="stylesheet" href="/css/register.css">
 </head>
+
 <body>
     <header></header>
-    
+    <main>
+        <div class="wrapper">
+            <div class="column">
+                <div class="title">
+                    <h1>账户注册使用手机号</h1>
+                </div>
+                <form>
+                    <div class="info">
+                        <div class="customer-name">
+                            <label for="firstname" class="label"><span>*&nbsp姓名</span></label>
+                            <input type="text" id="firstname" class="firstname">
+                        </div>
+                        <div class="gender">
+                            <label for="gender" class="label"><span>*&nbsp性别</span></label>
+                            <div class="control">
+                                <select name="gender" id="gender1" class="selection">
+                                    <option value selected="selected"></option>
+                                    <option value="男">男</option>
+                                    <option value="女">女</option>
+                                    <option value="不公开">不公开</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tel-pwd">
+                        <div class="tel-p">
+                            <label for="mobile" class="label"><span>*&nbsp手机</span></label>
+                            <input type="text" id="mobile" class="mobile">
+                        </div>
+                        <div class="tel-setPwd">
+                            <label for="pwd" class="label"><span>*&nbsp密码</span></label>
+                            <input type="password" id="pwd1" class="pwd">
+                        </div>
+                        <div class="tel-isPwd">
+                            <label for="isPwd" class="label"><span>*&nbsp确认密码</span></label>
+                            <input type="password" id="isPwd" class="isPwd">
+                        </div>
+                        <div class="choic">
+                            <input type="checkbox" title="我已阅读并同意《浪琴网站隐私条款》" name="is_terms">
+                            <label for="is_terms" class="label"><span>我已阅读并同意&nbsp;&nbsp;<a
+                                        href="javascript:;">隐私政策</a></span></label>
+                        </div>
+                        <div class="info-sunmit">
+                            <button class="submit" id="submit">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer></footer>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/register"></script>
 </body>
+
 </html>

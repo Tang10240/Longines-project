@@ -1,0 +1,235 @@
+@import "./modules/base.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+main {
+  width: 100%;
+  min-height: 1px;
+  margin-top: 110px;
+  background-color: #ccc;
+  .wrapper {
+    width: 92%;
+    min-width: 1140px;
+    min-height: 1px;
+    padding-top:80px;
+    margin: 0 auto;
+    .column {
+      width: 783px;
+      min-height: 1px;
+      margin: 0 auto;
+      padding: 3px 25px 13px 77px;
+      .title {
+        h1 {
+          height: 26px;
+          font-size: 24px;
+          margin: 17px 5px 5px 10px;
+          color: #003150;
+        }
+      }
+      form {
+        padding-top: 30px;
+        .info {
+          width: 660px;
+          height: 188px;
+          .customer-name {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            .label {
+              span {
+                display: block;
+                color: #677988;
+                font-weight: normal;
+                line-height: 18px;
+                font-size: 12px;
+                margin-bottom: 11px;
+                letter-spacing: 0.7px;
+              }
+            }
+            .firstname {
+              width: 295px;
+              height: 50px;
+              font-size: 13px;
+              padding: 0 20px;
+              background: #fff;
+              border: 1px solid #c7ccd0;
+              border-radius: 0;
+              color: #003150;
+            }
+          }
+          .gender {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            .label {
+              span {
+                display: block;
+                color: #677988;
+                font-weight: normal;
+                line-height: 18px;
+                font-size: 12px;
+                margin-bottom: 11px;
+                letter-spacing: 0.7px;
+              }
+            }
+            .control {
+              width: 176px;
+              height: 50px;
+              .selection {
+                width: 100%;
+                height: 50px;
+                font-size: 13px;
+                padding: 8px 34px 8px 20px;
+                //background-position: center right 15px;
+                border: 1px solid #c7ccd0;
+                color: #003150;
+                line-height: 30px;
+                background: #fff;
+                option {
+                  font-weight: normal;
+                  display: block;
+                  white-space: pre;
+                  min-height: 12px;
+                  padding: 0px 2px 1px;
+                }
+              }
+            }
+          }
+        }
+        .tel-pwd {
+          width: 660px;
+          height: 500px;
+          .tel-p {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            .label {
+              span {
+                display: block;
+                color: #677988;
+                font-weight: normal;
+                line-height: 18px;
+                font-size: 12px;
+                margin-bottom: 11px;
+                letter-spacing: 0.7px;
+              }
+            }
+            .mobile {
+              width: 295px;
+              height: 50px;
+              font-size: 13px;
+              padding: 0 20px;
+              background: #fff;
+              border: 1px solid #c7ccd0;
+              border-radius: 0;
+              color: #003150;
+            }
+          }
+          .tel-setPwd {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            .label {
+              span {
+                display: block;
+                color: #677988;
+                font-weight: normal;
+                line-height: 18px;
+                font-size: 12px;
+                margin-bottom: 11px;
+                letter-spacing: 0.7px;
+              }
+            }
+            .pwd {
+              width: 295px;
+              height: 50px;
+              font-size: 13px;
+              padding: 0 20px;
+              background: #fff;
+              border: 1px solid #c7ccd0;
+              border-radius: 0;
+              color: #003150;
+            }
+          }
+          .tel-isPwd {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            .label {
+              span {
+                display: block;
+                color: #677988;
+                font-weight: normal;
+                line-height: 18px;
+                font-size: 12px;
+                margin-bottom: 11px;
+                letter-spacing: 0.7px;
+              }
+            }
+            .isPwd {
+              width: 295px;
+              height: 50px;
+              font-size: 13px;
+              padding: 0 20px;
+              background: #fff;
+              border: 1px solid #c7ccd0;
+              border-radius: 0;
+              color: #003150;
+            }
+          }
+          .choic {
+            height: 24px;
+            margin-bottom: 25px;
+            input {
+              width: 24px;
+              height: 24px;
+              float: left;
+              margin-right: 10px;
+            }
+            .label {
+              font-size: 12px;
+              line-height: 24px;
+              color: #677988;
+              float: left;
+              a {
+                color: #003150;
+              }
+            }
+          }
+          .info-sunmit {
+            width: 300px;
+            height: 98px;
+            font-size: 14px;
+            button {
+              display: block;
+              position: relative;
+              width: 300px;
+              height: 70px;
+              text-align: left;
+              padding-left: 30px;
+              font-weight: 600;
+              background: #003150;
+              border: 1px solid #003150;
+              color: #fff;
+              &:hover {
+                background: #fff;
+                border: 1px solid #003150;
+                color: #003150;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
