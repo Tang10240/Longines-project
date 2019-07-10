@@ -9,7 +9,8 @@ require.config({
       zoom: 'libs/jquery-plugins/jquery.elevateZoom-3.0.8.min',
       fly: 'libs/jquery-plugins/jquery.fly.min',
       superslide:'libs/jquery/superslide.2.1',
-      banner:'js/modules/banner'
+      banner:'js/modules/banner',
+      cookie:'libs/jquery-plugins/jquery.cookie'
     },
     //垫片
     //不满足AMD规范，但又依赖别的模块
@@ -21,6 +22,9 @@ require.config({
         deps: ['jquery']
       },
       superslide: {
+        deps: ['jquery']
+      },
+      cookie:{
         deps: ['jquery']
       }
     }

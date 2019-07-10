@@ -28,16 +28,16 @@ require(['./config'], () => {
                     let number = this.telNumber.val()
                     let password = this.pwd.val()
                     let ispwd = this.isPwd.val()
-                    console.log(username, gender, number, password,ispwd)
+                    //console.log(username, gender, number, password,ispwd)
                     if(password === ispwd){
                         $.post(`${url.phpBaseUrl}/LonginesUser/api/user/register.php`, { username, gender, number, password }, (resp) => {
                             let resp1 = JSON.parse(resp)
                             if (resp1.code === 200) {
                                 alert(resp1.body.message)
-                                _this.firstname.val('')
-                                _this.gender.val('')
-                                _this.telNumber.val('')
-                                _this.pwd.val('')
+                                this.firstname.val('')
+                                this.gender.val('')
+                                this.telNumber.val('')
+                                this.pwd.val('')
                                 setTimeout(function () {
                                     window.location.href = "http://localhost:996/html/login.html"
                                 }, 2000)

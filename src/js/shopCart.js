@@ -156,22 +156,22 @@ require(['./config'], () => {
                 let _this = this
                 this.shopTbody.on('click', '.delete', function () {
                     const id = $(this).parents('tr').attr('data-id')
-                    if (_this.cart.length > 1) {
-                        _this.cart = _this.cart.filter(shop => {
-                            return shop.id != id
-                        })
-                        localStorage.setItem('cart', JSON.stringify(_this.cart))
-                        _this.calculatePrice()
-                        _this.init()
-                        _this.shopCartIn()
-                    } else {
-                        localStorage.removeItem('cart')
-                        $(this).parents('tr').remove()
-                        console.log(_this.cart)
-                        _this.calculatePrice()
-                        _this.init()
-                        //$("#empty-cart").show()
-                        // $(this).parents('tr').remove()
+                    if (confirm('是否要删除？')) {
+                        if (_this.cart.length > 1) {
+                            _this.cart = _this.cart.filter(shop => {
+                                return shop.id != id
+                            })
+                            localStorage.setItem('cart', JSON.stringify(_this.cart))
+                            _this.calculatePrice()
+                            _this.init()
+                            _this.shopCartIn()
+                        } else {
+                            localStorage.removeItem('cart')
+                            $(this).parents('tr').remove()
+                            _this.calculatePrice()
+                            _this.init()
+                            _this.shopCartIn()
+                        }
                     }
                 })
             }
@@ -190,6 +190,8 @@ require(['./config'], () => {
                     $('#shopCarNmber').html(0)
                 }
             }
+            //商品排序
+            //
         }
         new Cart()
     })

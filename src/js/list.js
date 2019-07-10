@@ -21,12 +21,6 @@ require(['./config'], () => {
             }
           })
         })
-        // $.get('http://rap2api.taobao.org/app/mock/223487/shop/list',resp=>{
-        //   // console.log(resp)
-        //   let str = template('list-template',{list:resp.body.list})
-        //   //console.log(str)
-        //   this.container.html(str)
-        // })
       }
       renderList(list){
         //第二个参数{list:list} 里面的key:指的是template里面需要的变量名，value指的是从接口获取到的数据

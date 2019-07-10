@@ -1,34 +1,19 @@
 @import "./modules/base.scss";
 @import "./modules/header.scss";
-@import"./modules/banner.scss";
+@import "./modules/banner.scss";
 @import "./modules/footer.scss";
 
 main {
   width: 100%;
   min-height: 1px;
-  // .banner {
-  //   width: 100%;
-  //   height: 614px;
-  //   ul {
-  //     li {
-  //       width: 100%;
-  //       height: 614px;
-  //       a {
-  //         display: block;
-  //         img {
-  //           width: 100%;
-  //           height: 614px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
   .width-breakpoint {
     width: 100%;
+    min-width: 1140px;
     min-height: 1px;
     background-color: #ccc;
     .wrap {
       width: 92%;
+      min-width: 1140px;
       min-height: 1px;
       margin: 0 auto;
       .bestseller-title {

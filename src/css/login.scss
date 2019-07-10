@@ -5,6 +5,7 @@
 // 登录页面
 main {
   width: 100%;
+  min-width: 1140px;
   min-height: 800px;
   background-color: #ccc;
   margin-top: 110px;
@@ -96,7 +97,7 @@ main {
                   background: #003150;
                   border: 1px solid #003150;
                   color: #fff;
-                  &:hover{
+                  &:hover {
                     background: #fff;
                     border: 1px solid #003150;
                     color: #003150;
@@ -127,10 +128,10 @@ main {
                 background: #003150;
                 border: 1px solid #003150;
                 color: #fff;
-                &:hover{
-                    background: #fff;
-                border: 1px solid #003150;
-                color: #003150;
+                &:hover {
+                  background: #fff;
+                  border: 1px solid #003150;
+                  color: #003150;
                 }
               }
             }
@@ -181,7 +182,7 @@ main {
               background: #003150;
               border: 1px solid #003150;
               color: #fff;
-              &:hover{
+              &:hover {
                 background: #fff;
                 border: 1px solid #003150;
                 color: #003150;

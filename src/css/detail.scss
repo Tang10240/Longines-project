@@ -11,6 +11,7 @@ main {
   margin-top: 110px;
   .content-wrapper {
     width: 92%;
+    min-width:1290px;
     height: 53px;
     padding: 15px 0;
     margin: 0 auto;
@@ -33,12 +34,13 @@ main {
   }
   .detail {
     width: 100%;
+    min-width:1290px;
     height: 800px;
     background-color: #ccc;
     padding-top: 50px;
     .container {
       width: 94%;
-      //min-width:1290px;
+      min-width:1290px;
       height: 100%;
       margin: 0 auto;
       .shop-img {

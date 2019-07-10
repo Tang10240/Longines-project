@@ -42,11 +42,28 @@ header {
         line-height: 50px;
         padding-left: 45px;
         background: url(../../img/nav-4.jpg) no-repeat 15px center;
-        a {
+        position: relative;
+        .account {
           color: white;
         }
-        &:hover {
+        .log-out {
+          width: 228px;
+          height: 50px;
+          background-color: #fff;
+          position: absolute;
+          top: 50px;
+          left: -140px;
+          display: none;
+          z-index: 99;
+          &:hover {
+            background-color: #ccc;
+          }
           a {
+            display: block;
+            text-transform: uppercase;
+            padding: 15px 25px;
+            font-size: 13px;
+            line-height: 20px;
             color: #003150;
           }
         }
@@ -99,7 +116,7 @@ header {
       // position: relative;
       li {
         float: right;
-        &.ac{
+        &.ac {
           background-color: #ccc;
         }
         a {
