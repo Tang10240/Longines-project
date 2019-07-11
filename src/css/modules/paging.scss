@@ -1,0 +1,68 @@
+@import "./base.scss" ;
+
+.fl {
+    float: left;
+}
+.box {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 190px;
+    transform: translate(-50%, -50%);
+    text-align: center; // 按钮
+    button {
+        padding: 0 10px;
+        margin: 0 10px;
+        height: 40px;
+        @extend .fl;
+        cursor: pointer;
+        border: 1px solid #ebebeb;
+        background-color: #ffffff;
+    } // 首页、尾页按钮
+    .first-page,
+    .last-page {
+        margin: 0;
+    } // 页码块
+    .pageWrap {
+        height: 40px;
+        @extend .fl;
+        overflow: hidden;
+        ul {
+            width: 100000px;
+            height: 40px;
+            @extend .fl;
+            li {
+                width: 60px;
+                height: 40px;
+                border: 1px solid #ebebeb;
+                line-height: 40px;
+                box-sizing: border-box;
+                cursor: pointer;
+                @extend .fl;
+            } // 选中页码
+            .sel-page {
+                background-color: #003150; //选中时的颜色
+                color: white;
+            }
+        }
+    } // 跳转页
+    .jump-text {
+        width: 60px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 5px;
+        @extend .fl;
+    } // 跳转按钮
+    .jump-button {
+        margin:0;
+        @extend .fl;
+    } // 总页数,总条目数
+    .total-pages,
+    .total-count {
+        margin-left: 10px;
+        @extend .fl;
+        font-size: 14px;
+    }
+}

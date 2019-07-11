@@ -199,4 +199,24 @@ footer {
       }
     }
   }
+  .chat-link-fixed{
+    width: 64px;
+    height: 64px;
+    background-color: #003150;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a{
+      display: block;
+      width: 48px;
+      height: 62px;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      line-height: normal;
+      background:url(/img/icon.jpg) no-repeat 14px 10px;
+      padding: 35px 0 10px;
+      margin-left: 8px;
+    }
+  }
 }

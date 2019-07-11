@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>列表页</title>
     <link rel="stylesheet" href="/css/list.css">
 </head>
 
@@ -21,12 +21,14 @@
             </ul>
             <div class="list-sort">
                 <p>排序</p>
-                <select id="">
-                    <option value="热销商品">热销商品</option>
-                    <option value="默认" selected>默认</option>
-                    <option value="价格 升序">价格 升序</option>
-                    <option value="价格 降序">价格 降序</option>
-                </select>
+                <div class="sort" id="sort">
+                    <a href="javascript:;" class="moren">默认</a>
+                    <ul id="sort-u">
+                        <li class="li1">热销商品</li>
+                        <li class="li2">价格 升序</li>
+                        <li class="li3">价格 降序</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="shop-list">
@@ -49,6 +51,8 @@
                 {{/each}}
             </script>
         </div>
+        <!-- 分页 -->
+        <div class="box" id="box"></div>
     </main>
     <footer></footer>
     <script src="/libs/requirejs/require.min.js" data-main="/js/list"></script>

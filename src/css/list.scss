@@ -1,11 +1,13 @@
 @import "./modules/base.scss";
 @import "./modules/header.scss";
+@import "./modules/paging.scss";
 @import "./modules/footer.scss";
 
 main {
   width: 100%;
-  min-height: 2200px;
+  min-height: 2400px;
   margin-top: 110px;
+  position: relative;
   .list-top {
     min-width: 1140px;
     height: 57px;
@@ -42,13 +44,47 @@ main {
         float: left;
         margin-right: 10px;
       }
-      select {
+      .sort {
         float: left;
         width: 180px;
         height: 100%;
-        padding: 0 20px;
-        color: white;
+        //padding: 0 20px;
         background-color: #003150;
+        position: relative;
+        a {
+          display: block;
+          line-height: 57px;
+          text-align: center;
+          color: white;
+        }
+        ul {
+          width: 100%;
+          height: 152px;
+          border: 1px solid #c7ccd0;
+          position: absolute;
+          top: 57px;
+          left: 0;
+          background-color: #fff;
+          z-index: 9;
+          display: none;
+          li {
+            width: 178px;
+            height: 50px;
+            line-height: 45px;
+            border-top: 1px solid #c7ccd0;
+            font-size: 14px;
+            padding: 5px 10px;
+            color: #003150;
+            cursor: pointer;
+            &:hover{
+              background-color: #ccc;
+              color: #fff;
+            }
+            &:nth-child(1) {
+              border-top: none;
+            }
+          }
+        }
       }
     }
   }
