@@ -1,0 +1,185 @@
+@import "./modules/base.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+main {
+  width: 100%;
+  min-height: 500px;
+  min-width: 1140px;
+  background-color: #ccc;
+  margin-top: 110px;
+  .mintop {
+    width: 100%;
+    height: 60px;
+    ul {
+      width: 92%;
+      min-width: 1140px;
+      height: 100%;
+      font-size: 12px;
+      color: #003150;
+      padding: 19px 0 19px 0;
+      margin: 0 auto;
+      li {
+        line-height: 22px;
+        float: left;
+        a {
+          color: #003150;
+          span {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .conner-wrap {
+    width: 92%;
+    min-height: 500px;
+    margin: 0 auto;
+    .shop-cart {
+      width: 100%;
+      min-height: 300px;
+      table-layout: fixed;
+      border-collapse: collapse;
+      caption {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        color: #003150;
+        line-height: 60px;
+        text-align: center;
+      }
+      thead {
+        width: 100%;
+        height: 50px;
+        background-color: #003150;
+        color: white;
+        font-size: 16px;
+        line-height: 50px;
+        .t-head {
+          border: 1px solid #003150;
+          th {
+            border: 1px solid #fff;
+            text-align: center;
+            input {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+      tbody {
+        width: 100%;
+        min-height: 100px;
+        font-size: 16px;
+        .empty-cart {
+          font-size: 24px;
+          td {
+            text-align: center;
+            border: 1px solid #003150;
+            a {
+              display: block;
+              color: #003150;
+            }
+          }
+        }
+        .t-body {
+          border: 1px solid #003150;
+          td {
+            border: 1px solid #fff;
+            text-align: center;
+            input {
+              width: 16px;
+              height: 16px;
+            }
+          }
+          .shop {
+            a {
+              display: block;
+              color: #003150;
+              img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+              }
+              .shop-desc {
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                font-size: 14px;
+                text-align: center;
+              }
+            }
+          }
+          .number {
+            div {
+              width: 78px;
+              height: 16px;
+              margin-left: 57px;
+              a {
+                float: left;
+                width: 20px;
+                height: 18px;
+                line-height: 18px;
+                font-weight: 600;
+                border: 1px solid #fff;
+                color: #003150;
+              }
+              .n-num {
+                float: left;
+                width: 30px;
+                height: 16px;
+                line-height: 16px;
+                font-weight: normal;
+                background-color: #fff;
+                border: 1px solid #fff;
+              }
+            }
+          }
+          .operation {
+            .delete {
+              display: block;
+              width: 78px;
+              height: 20px;
+              line-height: 20px;
+              background-color: #003150;
+              color: white;
+              margin-left: 57px;
+            }
+          }
+        }
+      }
+      tfoot {
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        line-height: 50px;
+        background-color: #003150;
+        .t-foot {
+          border: 1px solid #003150;
+          td {
+            border: 1px solid #fff;
+            text-align: center;
+          }
+          .total {
+            width: 60%;
+            height: 100%;
+            text-align: right;
+          }
+          .settlement {
+            width: 40%;
+            height: 100%;
+            a {
+              display: block;
+              width: 78px;
+              height: 30px;
+              line-height: 30px;
+              background-color: #fff;
+              color: #003150;
+              margin-left: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

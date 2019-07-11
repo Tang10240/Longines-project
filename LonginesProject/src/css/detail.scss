@@ -1,0 +1,206 @@
+@import "./modules/base.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+main {
+  width: 100%;
+  min-width:1140px;
+  min-height: 1500px;
+  background: #003150;
+  color: #fff;
+  font-weight: 100;
+  margin-top: 110px;
+  .content-wrapper {
+    width: 92%;
+    min-width:1140px;
+    height: 53px;
+    padding: 15px 0;
+    margin: 0 auto;
+    .items {
+      width: 100%;
+      line-height: 20px;
+      font-size: 14px;
+      li {
+        float: left;
+        line-height: 20px;
+        font-size: 14px;
+        a {
+          color: #fff;
+          span {
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }
+  .detail {
+    width: 100%;
+    min-width:1140px;
+    height: 800px;
+    background-color: #ccc;
+    padding-top: 50px;
+    .container {
+      width: 94%;
+      min-width:1140px;
+      height: 100%;
+      margin: 0 auto;
+      .shop-img {
+        width: 500px;
+        height: 100%;
+        float: left;
+        .medium-container {
+          width: 500px;
+          height: 600px;
+          margin: 0 0 20px 0;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .view_thumbs {
+          width: 100%;
+          height: 130px;
+          .view-ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            .small-container {
+              width: 80px;
+              height: 100px;
+              a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .shop-description {
+        width: 640px;
+        height: 100%;
+        float: right;
+        color: rgb(0, 49, 80);
+        .first-desc {
+          width: 100%;
+          // height: 46px;
+          .title {
+            height: 15px;
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: normal;
+            margin: 15px 0 10px 0;
+          }
+          .size-sort {
+            height: 28px;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            p {
+              float: left;
+              margin-right: 10px;
+            }
+            h3 {
+              float: left;
+            }
+          }
+        }
+        .product-info-list {
+          width: 100%;
+          height: 220px;
+          border-top: 1px solid #003150;
+          border-bottom: 1px solid #003150;
+          padding: 16px 0;
+          margin-bottom: 30px;
+          li {
+            margin: 10px 0;
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+        .price {
+          width: 100%;
+          height: 40px;
+          font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 30px;
+          p {
+            float: left;
+          }
+          a {
+            color: rgb(0, 49, 80);
+          }
+        }
+        .finally-decs {
+          height: 150px;
+          .watch-strap-size {
+            height: 70px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            .p1 {
+              width: 205px;
+              height: 100%;
+              float: left;
+              margin-right: 20px;
+              border: 1px solid #003150;
+              text-align: center;
+              line-height: 70px;
+            }
+            .p2 {
+              width: 205px;
+              height: 100%;
+              float: left;
+              border: 1px solid #003150;
+              text-align: center;
+              line-height: 70px;
+            }
+          }
+          .shop-cart {
+            height: 70px;
+            .cart {
+              width: 205px;
+              height: 100%;
+              font-size: 20px;
+              line-height: 70px;
+              text-align: center;
+              font-weight: 400;
+              color: white;
+              float: left;
+              margin-right: 20px;
+              background: #003150;
+            }
+            .buy-immediately {
+              width: 205px;
+              height: 100%;
+              font-size: 20px;
+              line-height: 70px;
+              text-align: center;
+              color: white;
+              float: left;
+              background: #003150;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  .part1 {
+    width: 100%;
+    height: 570px;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- banner图 -->
+        <div class="slider">
+
+        </div>
+        <!-- banner图 -->
+
+        <div class="width-breakpoint">
+            <div class="wrap">
+                <div class="bestseller-title">畅销表款</div>
+                <ul class="index-list" id="index-list">
+                
+                </ul>
+                <a href="/html/list.html" class="more">查看所有表款 —></a>
+            </div>
+            <script type="text/html" id="index-template">
+                {{each index item}}
+                <li>
+                    <a href="/html/detail.html?id={{item.id}}" class="li-a">
+                        <img src="{{item.img}}" alt="">
+                        <p class="title">{{item.title}}</p>
+                        <span class="reference">L2.628.4.78.3</span>
+                        <div class="purchase">了解详情</div>
+                    </a>
+                </li>
+                {{/each}}
+            </script>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="libs/requirejs/require.min.js" data-main="js/index"></script>
+</body>
+</html>

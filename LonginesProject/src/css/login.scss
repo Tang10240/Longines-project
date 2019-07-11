@@ -1,0 +1,196 @@
+@import "./modules/base.scss";
+@import "./modules/header.scss";
+@import "./modules/footer.scss";
+
+// 登录页面
+main {
+  width: 100%;
+  min-width: 1140px;
+  min-height: 800px;
+  background-color: #ccc;
+  margin-top: 110px;
+  .wrapper {
+    width: 92%;
+    min-width: 1140px;
+    min-height: 1px;
+    margin: 0 auto;
+    padding-top: 105px;
+    .page-title {
+      display: block;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      margin-bottom: 72px;
+      span {
+        color: #003150;
+        font-size: 40px;
+      }
+    }
+    .columns {
+      width: 100%;
+      height: 649px;
+      .columns-wrapper {
+        width: 980px;
+        height: 100%;
+        margin: 0 auto;
+        .left-login {
+          width: 490px;
+          height: 553px;
+          float: left;
+          .customer-login {
+            width: 340px;
+            height: 531px;
+            padding: 0 40px 0 0;
+            border-right: 1px solid #677988;
+            float: right;
+            .tit {
+              padding-top: 8px;
+              font-size: 17px;
+              text-transform: uppercase;
+              letter-spacing: 0.6px;
+              white-space: nowrap;
+              text-align: left;
+              color: #003150;
+              margin-bottom: 47px;
+            }
+            .block-content {
+              height: 310px;
+              .tel-email {
+                height: 70px;
+                margin-bottom: 26px;
+                input {
+                  width: 300px;
+                  height: 70px;
+                  padding: 0 20px 0 30px;
+                  font-size: 13px;
+                  background: #fff;
+                  background-clip: border-box;
+                  border: 1px solid #c7ccd0;
+                }
+              }
+              .password {
+                height: 70px;
+                margin-bottom: 26px;
+                input {
+                  width: 300px;
+                  height: 70px;
+                  padding: 0 20px 0 30px;
+                  font-size: 13px;
+                  background: #fff;
+                  background-clip: border-box;
+                  border: 1px solid #c7ccd0;
+                }
+              }
+              .actions {
+                width: 300px;
+                height: 98px;
+                font-size: 14px;
+                button {
+                  display: block;
+                  position: relative;
+                  width: 300px;
+                  height: 70px;
+                  text-align: left;
+                  padding-left: 30px;
+                  font-weight: 600;
+                  background: #003150;
+                  border: 1px solid #003150;
+                  color: #fff;
+                  &:hover {
+                    background: #fff;
+                    border: 1px solid #003150;
+                    color: #003150;
+                  }
+                }
+                .password-forgotten {
+                  margin-top: 10px;
+                  margin-bottom: 20px;
+                  display: block;
+                  font-size: 13px;
+                  text-align: right;
+                  letter-spacing: -0.5px;
+                  color: #677988;
+                }
+              }
+            }
+            .otherLogin {
+              width: 300px;
+              height: 126px;
+              font-size: 14px;
+              .label {
+                display: block;
+                width: 300px;
+                height: 70px;
+                line-height: 70px;
+                padding-left: 30px;
+                margin: 8px 0;
+                background: #003150;
+                border: 1px solid #003150;
+                color: #fff;
+                &:hover {
+                  background: #fff;
+                  border: 1px solid #003150;
+                  color: #003150;
+                }
+              }
+            }
+          }
+        }
+        .right-register {
+          width: 490px;
+          height: 331px;
+          float: right;
+          .tit {
+            padding-top: 8px;
+            padding-left: 40px;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            white-space: nowrap;
+            text-align: left;
+            color: #003150;
+            margin-bottom: 47px;
+          }
+          .intro {
+            width: 100%;
+            height: 125px;
+            padding-left: 40px;
+            p {
+              margin-bottom: 5px;
+              font-size: 14px;
+              line-height: 16px;
+              letter-spacing: 0.6px;
+              font-weight: 100;
+              color: #003150;
+            }
+            .m-b {
+              margin-bottom: 25px;
+            }
+          }
+          .content {
+            width: 340px;
+            padding-left: 40px;
+            font-size: 14px;
+            .registration {
+              display: block;
+              width: 300px;
+              height: 70px;
+              line-height: 70px;
+              padding-left: 30px;
+              margin: 8px 0;
+              background: #003150;
+              border: 1px solid #003150;
+              color: #fff;
+              &:hover {
+                background: #fff;
+                border: 1px solid #003150;
+                color: #003150;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
